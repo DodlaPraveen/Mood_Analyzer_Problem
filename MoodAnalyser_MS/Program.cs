@@ -2,46 +2,11 @@
 
 namespace MoodAnalyser_MS
 {
-    public class Program
-    {
-        public string message;
-        public Program() : this("I am in Happy Mood")
-        {
-
-        }
-        public Program(string message)
-        {
-            this.message = message;
-        }
+   class Program
+    { 
         static void Main(string[] args)
         {
-
+            Console.WriteLine("Welcome to Mood Analyser");
         }
-        public string AnalyseMood()
-        {
-            try
-            {
-                if (this.message.Contains("Sad"))
-                {
-                    return "SAD";
-                }
-                else if (this.message.Contains("Happy"))
-                {
-                    return "HAPPY";
-                }
-                else if (this.message.Contains("Any"))
-                {
-                    return "HAPPY";
-                }
-                else
-                {
-                    return "Happy";
-                }
-            }
-            catch
-            {
-                return "Happy";
-            }
-        }
-    }
+   }
 }
